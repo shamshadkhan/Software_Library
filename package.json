@@ -8,7 +8,7 @@
     "test": "mocha",
     "mocha": "_mocha -b -R spec",
     "test-cov": "node_modules/.bin/nyc --require babel-core/register node_modules/.bin/mocha",
-    "test-coveralls": "nyc npm run mocha && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose"
+    "test-coveralls": "npm run test-cov -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "author": "",
   "license": "MIT",

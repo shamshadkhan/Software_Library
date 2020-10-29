@@ -1,0 +1,25 @@
+{
+  "check-coverage": true,
+  "lines": 99,
+  "statements": 99,
+  "functions": 99,
+  "branches": 99,
+  "exclude": [
+    "coverage/*",
+    "node_modules/*",
+    "divisionOfIntegers.js",
+    "sum.js",
+    "src/*"
+   ],
+   "reporter": [
+     "lcov",
+     "text-summary"
+   ],
+   "require": [],
+  "extension": [
+     ".js"
+  ],
+  "cache": false,
+  "all": true,
+  "report-dir": "./coverage"
+}
