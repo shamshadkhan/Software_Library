@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha",
     "mocha": "_mocha -b -R spec",
-    "test-cov": "nyc npm run mocha",
+    "test-cov": "node_modules/.bin/nyc --require babel-core/register node_modules/.bin/mocha",
     "test-coveralls": "nyc npm run mocha && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose"
   },
   "author": "",
@@ -18,10 +18,11 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
-    "istanbul": "^1.0.0-alpha",
     "mocha": "^8.1.3",
     "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^14.1.1",
-    "shx": "^0.3.3"
+    "shx": "^0.3.3",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
