@@ -1,10 +1,10 @@
 // node 12 and up
 import chai from "chai"
-import sum from "../sum.js"
+import sum from "../src/add.js"
 const expect = chai.expect
 
 
-describe("Sum", () => {
+describe("Add Operation", () => {
  it("adds positive number to positive number", () =>{
      expect(sum(3,6)).to.equal(9)
  });
@@ -14,10 +14,7 @@ describe("Sum", () => {
 it("adds negative number to negative number", () =>{
     expect(sum(-6,-6)).to.equal(-12)
 });
-it("adds positive number to negative number", () =>{
-    expect(sum(0,-6)).to.equal(-6)
+it("adds integer number to float number", () =>{
+    expect(sum(6,3.2)).to.equal(9.2)
 });
-it('should return NaN if passed a word string', function() {
-    expect(sum( "hello", "pal" )).to.be.NaN;
-  });
 })
