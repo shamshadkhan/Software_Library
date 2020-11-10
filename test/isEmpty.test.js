@@ -30,6 +30,6 @@ describe("isEmpty Operation", () => {
         expect(isEmpty([])).to.equal(true)
     });
     it("if buffer length > 0 return false", () =>{
-        expect(isEmpty(new Buffer(2))).to.equal(false)
+        expect(isEmpty(Buffer.from("2"))).to.equal(false)
     });
 })

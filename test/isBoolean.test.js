@@ -20,7 +20,7 @@ describe("isBoolean Operation", () => {
     it("if value is string return false", () =>{
         expect(isBoolean('abc')).to.equal(false)
     });
-    it("if value is object lengthreturn false", () =>{
+    it("if value is object return false", () =>{
         expect(isBoolean({ 'a': 1 })).to.equal(false)
     });
 })
