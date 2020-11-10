@@ -8,6 +8,9 @@ describe("toNumber Operation", () => {
     it("string float is converted to number", () =>{
         expect(toNumber('3.2')).to.be.a('number')
     });
+    it("float is converted to number", () =>{
+        expect(toNumber(3.2)).to.be.a('number')
+    });
     it("string is converted to number", () =>{
         expect(toNumber('test')).to.be.a('number')
     });
