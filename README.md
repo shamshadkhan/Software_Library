@@ -1,5 +1,6 @@
 # Student template
 [![Build Status](https://travis-ci.com/shamshadkhan/software_library.svg?branch=main)](https://travis-ci.com/shamshadkhan/software_library)
+[![Coverage Status](https://coveralls.io/repos/github/shamshadkhan/software_library/badge.svg?branch=main)](https://coveralls.io/github/shamshadkhan/software_library?branch=main)
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course
