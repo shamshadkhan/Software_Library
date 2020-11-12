@@ -30,13 +30,22 @@ describe("toNumber Operation", () => {
         expect(toNumber(Symbol.iterator)).to.be.a('number')
     });
     it("binary number is converted to number", () =>{
-        expect(toNumber('0001 0000')).to.be.a('number')
+        expect(toNumber(0b0010000)).to.be.a('number')
     });
     it("hexa decimel number is converted to number", () =>{
         expect(toNumber(0x7FFFFFFD)).to.be.a('number')
     });
+    it("octal number is converted to number", () =>{
+        expect(toNumber(0o152717)).to.be.a('number')
+    });
     it("object is converted to number", () =>{
         expect(toNumber({type:"Fiat", model:"500", color:"white"})).to.be.a('number')
+    });
+    it("Function is converted to number", () =>{
+        expect(toNumber(Function)).to.be.a('number')
+    });
+    it("Array is converted to number", () =>{
+        expect(toNumber([1,2,3])).to.be.a('number')
     });
     
 })

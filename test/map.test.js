@@ -21,4 +21,7 @@ describe("map Operation", () => {
         const arr = ["1","2","3"]
         expect(map(arr,square)).to.eql([1, 4, 9]);
     });
+    it("null array should be mapped to empty array", () =>{
+        expect(map(null,square)).to.eql([]);
+    });
 })

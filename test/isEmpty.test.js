@@ -32,4 +32,7 @@ describe("isEmpty Operation", () => {
     it("if buffer length > 0 return false", () =>{
         expect(isEmpty(Buffer.from("2"))).to.equal(false)
     });
+    it("if value is function return true", () =>{
+        expect(isEmpty(function() { return arguments }())).to.equal(true)
+    });
 })

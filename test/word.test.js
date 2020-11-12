@@ -14,4 +14,7 @@ describe("words Operation", () => {
     it("string of alphanumeric characters passed without pattern should return array of words", () =>{
         expect(words('Çüéâ äàåçê')).to.eql(['Çüéâ', 'äàåçê'])
     });
+    it("empty should return empty array", () =>{
+        expect(words('')).to.eql([])
+    });
 })

@@ -14,6 +14,9 @@ describe("toString Operation", () => {
     it("if value is number return string", () =>{
         expect(toString(1)).to.be.a('string');
     });
+    it("if value is 0 return string", () =>{
+        expect(toString(0)).to.be.a('string');
+    });
     it("if value is array return string", () =>{
         expect(toString([1, 2, 3])).to.be.a('string');
     });
