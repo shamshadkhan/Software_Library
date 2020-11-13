@@ -5,16 +5,16 @@ const expect = chai.expect
 
 
 describe("upperFirst Operation", () => {
-    it("first string uppercased when all letter small in string with one word", () =>{
+    it("first charachter uppercased when all letter small in string with one word", () =>{
         expect(upperFirst('samsung')).to.equal('Samsung')
     });
-    it("first string uppercased when all letter capital in string with one word", () =>{
+    it("first charachter uppercased and other charachter remain same when all letter capital in string with one word", () =>{
         expect(upperFirst('GALAXY')).to.equal('GALAXY')
     });
-    it("first string uppercased when string has 2 or more word", () =>{
+    it("first charachter uppercased when string has 2 or more word", () =>{
         expect(upperFirst('samsung and galaxy')).to.equal('Samsung and galaxy')
     });
-    it("first string uppercased when string has 2 word seprated by hypen", () =>{
+    it("first charachter uppercased when string has 2 word seprated by hypen", () =>{
         expect(upperFirst('samsung-galaxy')).to.equal('Samsung-galaxy')
     });
 })
