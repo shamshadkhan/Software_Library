@@ -6,6 +6,7 @@ const expect = chai.expect
 
 describe("chunk Operation", () => {
     it("Array must properly chunk based on chunk size", () =>{
+        //Not applicable
         expect(chunk(['a', 'b', 'c', 'd'], 3)).to.not.eql([['a', 'b', 'c'], ['d']])
     });
     it("if Array is null must return empty array", () =>{
