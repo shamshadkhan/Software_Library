@@ -3,7 +3,7 @@
   "lines": 95,
   "statements": 95,
   "functions": 95,
-  "branches": 60,
+  "branches": 80,
   "exclude": [
     "coverage/*",
     "node_modules/*",
